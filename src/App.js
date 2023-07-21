@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { Route, Routes , NavLink, Navigate } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Tasks from "./components/tasks/Tasks";
+import AddTask from "./components/tasks/AddTask";
+import ViewTask from "./components/tasks/ViewTask";
+import EditTask from "./components/tasks/EditTask";
+
+const App = () => {
+    const [tasks, setTasks] = useState([]);
+    const [loading, setLoading] = useState(false);
+
+    return (
+        <div className="App container">
+            <Navbar />
+
+            <Routes>
+                <Route path="/" element={<Navigate to="/tasks" />} />
+                <Route
+                    path="/tasks"
+                    element={<Tasks tasks={tasks} loading={loading} />}
+                />
+                <Route path="tasks/add" element={<AddTask />} />
+                <Route path="tasks/:taskId" element={<ViewTask />} />
+                <Route path="tasks/edit/:taskId" element={<EditTask />} />
+            </Routes>
+        </div>
+    );
+};
 
 export default App;
