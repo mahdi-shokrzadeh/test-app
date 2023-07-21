@@ -1,0 +1,45 @@
+{
+  "tasks": [
+    {
+      "task": "خرید",
+      "photo": "https://via.placeholder.com/200",
+      "group": "2",
+      "description": "description description description",
+      "id": 1
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "خرید"
+    },
+    {
+      "id": "2",
+      "name": "ورزش"
+    },
+    {
+      "id": "3",
+      "name": "قرار ملاقات"
+    },
+    {
+      "id": "4",
+      "name": "مطالعه"
+    },
+    {
+      "id": "5",
+      "name": "بیرون رفتن"
+    },
+    {
+      "id": "6",
+      "name": "تسک کاری"
+    },
+    {
+      "id": "7",
+      "name": "یادآوری"
+    },
+    {
+      "id": "8",
+      "name": "غیره ..."
+    }
+  ]
+}
