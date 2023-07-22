@@ -236,3 +236,18 @@ blockquote {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
+
+.Toastify__toast-body {
+	font-family: IRANSansX !important;
+}
+
+
+.check-btn:hover {
+	background-color: #A6E9D5 !important;
+}
+.task-card {
+	border-radius: 25px;
+}
+.task-card:hover {
+		transform: translate(0, -2px);
+}

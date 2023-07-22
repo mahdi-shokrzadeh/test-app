@@ -7,7 +7,7 @@ export const getAllTasks = () => {
     return axios.get(url);
 };
 
-export const getTask = (id) => {
+export const getTaskById = (id) => {
     const url = `${SERVER_URL}/tasks/${id}`;
     return axios.get(url);
 };
@@ -23,7 +23,7 @@ export const getGroup = (id) => {
 };
 
 export const createTask = (task) => {
-    url = `${SERVER_URL}/tasks`;
+    const url = `${SERVER_URL}/tasks`;
     return axios.post(url, task);
 };
 

@@ -1,11 +1,28 @@
 {
   "tasks": [
     {
+      "isCompleted": true,
+      "task": "خرید گوشی",
+      "photo": "https://dkstatics-public.digikala.com/digikala-categories/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1662362431.png?x-oss-process=image/format,webp",
+      "group": "",
+      "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است",
+      "id": 3
+    },
+    {
+      "isCompleted": false,
+      "task": "خرید وسیله",
+      "photo": "https://dkstatics-public.digikala.com/digikala-categories/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1662362431.png?x-oss-process=image/format,webp",
+      "group": "3",
+      "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است",
+      "id": 4
+    },
+    {
+      "isCompleted": false,
       "task": "خرید",
       "photo": "https://via.placeholder.com/200",
-      "group": "2",
-      "description": "description description description",
-      "id": 1
+      "group": "5",
+      "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است",
+      "id": 5
     }
   ],
   "groups": [
