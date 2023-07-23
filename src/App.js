@@ -26,6 +26,7 @@ import {
 } from "./services/taskService";
 
 import confirmAlert from "react-confirm-alert";
+import NotFound from "./components/NotFound";
 
 const App = () => {
     const [tasks, setTasks] = useState([]);
@@ -106,6 +107,7 @@ const App = () => {
 
     const isDone = async (taskId) => {
         try {
+            setLoading(true);
             const { data: tasksData } = await getTaskById(taskId);
 
             // console.log(tasksData);
@@ -120,9 +122,11 @@ const App = () => {
             const { data } = await updateTask(taskId, task);
             if (data) {
                 setForceRender(!forceRender);
+                setLoading(false);
             }
         } catch (err) {
             console.log(err);
+            setLoading(false);
         }
     };
 
@@ -210,6 +214,7 @@ const App = () => {
                         />
                     }
                 />
+                <Route path="/*" element={<NotFound />} />
             </Routes>
         </div>
     );

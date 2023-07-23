@@ -4,7 +4,7 @@ const Spinner = () => {
     return (
         <img
             src={Spinnergif}
-            className="d-block m-auto"
+            className="d-block m-auto mt-5"
             style={{ width: "200px" }}
         />
     );

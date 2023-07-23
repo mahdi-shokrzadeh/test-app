@@ -2,27 +2,27 @@
   "tasks": [
     {
       "isCompleted": true,
-      "task": "خرید گوشی",
-      "photo": "https://dkstatics-public.digikala.com/digikala-categories/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1662362431.png?x-oss-process=image/format,webp",
-      "group": "",
+      "task": "خرید ساعت 1",
+      "photo": "https://dkstatics-public.digikala.com/digikala-products/399398445c56f8f5aeadf83404ad6eec6bb69c1f_1605358452.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
+      "group": "5",
       "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است",
-      "id": 3
+      "id": 5
+    },
+    {
+      "isCompleted": true,
+      "task": "مطالعه کتاب",
+      "photo": "https://dkstatics-public.digikala.com/digikala-products/2d7fa11bf8e5cf88eed170fcb6583f33243e5c0e_1618656066.jpg?x-oss-process=image/resize,m_lfit,h_800,w_800/quality,q_90",
+      "group": "4",
+      "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.",
+      "id": 6
     },
     {
       "isCompleted": false,
       "task": "خرید وسیله",
-      "photo": "https://dkstatics-public.digikala.com/digikala-categories/aba1e5dca8958ac1176e25cd194ff8ac622cd383_1662362431.png?x-oss-process=image/format,webp",
-      "group": "3",
-      "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است",
-      "id": 4
-    },
-    {
-      "isCompleted": false,
-      "task": "خرید",
       "photo": "https://via.placeholder.com/200",
-      "group": "5",
+      "group": "4",
       "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است",
-      "id": 5
+      "id": 7
     }
   ],
   "groups": [
