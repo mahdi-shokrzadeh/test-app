@@ -1,7 +1,7 @@
 {
   "tasks": [
     {
-      "isCompleted": true,
+      "isCompleted": false,
       "task": "خرید ساعت 1",
       "photo": "https://dkstatics-public.digikala.com/digikala-products/399398445c56f8f5aeadf83404ad6eec6bb69c1f_1605358452.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
       "group": "5",
@@ -18,10 +18,10 @@
     },
     {
       "isCompleted": false,
-      "task": "خرید وسیله",
-      "photo": "https://via.placeholder.com/200",
+      "task": "خرید از فروشگاه",
+      "photo": "https://dkstatics-public.digikala.com/digikala-products/399398445c56f8f5aeadf83404ad6eec6bb69c1f_1605358452.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/quality,q_80",
       "group": "4",
-      "description": "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است",
+      "description": "توضیحات توضیحات توضیحات توضیحات توضیحات توضیحات توضیحات توضیحات توضیحات توضیحات ",
       "id": 7
     }
   ],

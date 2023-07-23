@@ -5,12 +5,16 @@ import {
     NavLink,
     Navigate,
     useNavigate,
+    useSearchParams,
+    URLSearchParams,
+    useParams,
 } from "react-router-dom";
 
 import { Toast, ToastContainer, toast } from "react-toastify";
 
 import "./App.css";
 import Navbar from "./components/Navbar";
+import SearchHandler from "./components/tasks/SearchHandler";
 import Tasks from "./components/tasks/Tasks";
 import AddTask from "./components/tasks/AddTask";
 import EditTask from "./components/tasks/EditTask";
@@ -27,12 +31,17 @@ import {
 
 import confirmAlert from "react-confirm-alert";
 import NotFound from "./components/NotFound";
+import Search from "./components/tasks/Search";
 
 const App = () => {
     const [tasks, setTasks] = useState([]);
     const [loading, setLoading] = useState(false);
     const [gropus, setGroups] = useState([]);
     const [singleTask, setSingleTask] = useState({});
+
+    const [searchParams , setSearchParams] = useSearchParams();
+
+
 
     const [getTask, setTask] = useState({
         isCompleted: false,
@@ -45,7 +54,6 @@ const App = () => {
 
     const setTaskInfo = (event) => {
         setTask({ ...getTask, [event.target.name]: event.target.value });
-        
     };
 
     const navigate = useNavigate();
@@ -116,9 +124,9 @@ const App = () => {
             //     isCompleted: !singleTask.isCompleted,
             // });
             // console.log(singleTask);
-            let task = tasksData ;
-            task.isCompleted = ! task.isCompleted ;
-            console.log(task)
+            let task = tasksData;
+            task.isCompleted = !task.isCompleted;
+            console.log(task);
             const { data } = await updateTask(taskId, task);
             if (data) {
                 setForceRender(!forceRender);
@@ -174,6 +182,29 @@ const App = () => {
     //   })
     // }
 
+    const handleSearch = async () => {
+
+
+        console.log(searchParams.get("filter"));
+        const { data } = await getAllTasks();
+
+
+        if(searchParams.get === "") {
+            setTasks(data) ;
+
+        }else{
+            // console.log(data)
+
+            setTasks(data.filter((item) => item.task.startsWith(searchParams.get("filter"))));
+            console.log(data.filter((item) => item.task.startsWith(searchParams.get("filter"))))
+        }
+            
+                
+            
+
+            
+    };
+
     return (
         <div className="App container">
             <ToastContainer rtl={true} position="top-right" theme="dark" />
@@ -189,6 +220,8 @@ const App = () => {
                             loading={loading}
                             confirmDelete={removeTask}
                             isDone={isDone}
+                            setTasks={setTasks}
+                            handleSearch={handleSearch}
                         />
                     }
                 />
@@ -204,6 +237,11 @@ const App = () => {
                         />
                     }
                 />
+
+                {/* <Route      
+                path="tasks:filter"
+                element={<SearchHandler tasks={tasks} setTasks={setTasks} hadleSearch={hadleSearch} />} 
+                /> */}
 
                 <Route
                     path="tasks/edit/:taskId"
