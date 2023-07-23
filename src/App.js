@@ -44,13 +44,7 @@ const App = () => {
 
     const setTaskInfo = (event) => {
         setTask({ ...getTask, [event.target.name]: event.target.value });
-        // setTask({
-        //     task: event.target.task,
-        //     photo: event.photo.value,
-        //     group: event.target.group,
-        //     description: event.target.description,
-        //     isCompleted: "false",
-        // });
+        
     };
 
     const navigate = useNavigate();
@@ -154,7 +148,7 @@ const App = () => {
     //       return (
     //         <div dir="rtl" className="p-4"  style={{border : "1px solid" , borderRadius : "1rem"}}>
     //           <h1>
-    //             پاک کردن مخاطب
+    //             پاک کردن تسک
     //           </h1>
     //           <p>
     //             مطمئنی که میخوای تسک رو حذف کنی؟
